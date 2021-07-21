@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8b54dd00-8bfd-436b-8b77-11e725cb0f70">
+	<property name="ireport.zoom" value="1.610510000000001"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="628"/>
+	<queryString>
+		<![CDATA[select* from transaksi]]>
+	</queryString>
+	<field name="id_transaksi" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenisFram" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hargaFrame" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenisLensa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hargaLensa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="48" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="59" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="96e83b10-b08b-4f42-a99c-31e2f8140738" x="238" y="39" width="61" height="20"/>
+				<textElement/>
+				<text><![CDATA[jl.Nuri no.03]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="39d70446-78be-4a7a-833e-08fac0a32a64" x="171" y="12" width="202" height="47"/>
+				<textElement>
+					<font fontName="SansSerif" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Toko Optik Amanah]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="63" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="355" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="cc36cb9c-d4fb-4a1b-8f9e-9787e63b04e0" x="14" y="112" width="74" height="20"/>
+				<textElement/>
+				<text><![CDATA[Jenis Frame]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cc36cb9c-d4fb-4a1b-8f9e-9787e63b04e0" x="14" y="143" width="74" height="20"/>
+				<textElement/>
+				<text><![CDATA[Jenis Lensa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e1a33594-d37e-4963-b2cc-08a9922715b7" x="323" y="112" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Harga Frame]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e1a33594-d37e-4963-b2cc-08a9922715b7" x="323" y="143" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Harga Lensa]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="4ff2aa5a-c64b-466c-a3e5-533d91ab8476" x="88" y="112" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{jenisFram}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4ff2aa5a-c64b-466c-a3e5-533d91ab8476" x="88" y="143" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{jenisLensa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4ff2aa5a-c64b-466c-a3e5-533d91ab8476" x="423" y="112" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{hargaFrame}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4ff2aa5a-c64b-466c-a3e5-533d91ab8476" x="423" y="143" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{hargaLensa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4ff2aa5a-c64b-466c-a3e5-533d91ab8476" x="423" y="200" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="e1a33594-d37e-4963-b2cc-08a9922715b7" x="323" y="200" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="73618c4b-b48b-4405-afa7-56c6f5710c75" x="0" y="0" width="71" height="20"/>
+				<textElement/>
+				<text><![CDATA[Id Penjualan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1760fd1a-54bb-4b24-b2b0-7754730f31aa" x="0" y="31" width="71" height="20"/>
+				<textElement/>
+				<text><![CDATA[nama ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c539f9be-4381-42fd-9665-3f0c009acc4d" x="355" y="0" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Tanggal/Jam]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="65f4b589-ef95-45d6-84d7-34d0a948b8f4" x="71" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{id_transaksi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="65f4b589-ef95-45d6-84d7-34d0a948b8f4" x="74" y="31" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="65f4b589-ef95-45d6-84d7-34d0a948b8f4" x="455" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="150" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="e1a33594-d37e-4963-b2cc-08a9922715b7" x="223" y="0" width="100" height="20"/>
+				<textElement>
+					<font size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TerimaKasih]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="2" splitType="Stretch"/>
+	</summary>
+</jasperReport>
